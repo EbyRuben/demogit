@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+    $("chk").click(function(){
+      if$(this.prop("checked"))
+      {
+        $('#password').attr("type","text");
+      }
+      else$
+      {
+        $('#password').attr("type","password");
+
+      }
+    });
+    </script>
+
+
+
+</head>
+<body>
+    
+<div class="signin">
+    <h1><center> Sign In</center></h1>
+    <div class="mail">
+        <p> email  <span>*</span></p>  <br>
+            <input type="email" class="email-input"><br>
+    </div> 
+    <div class="pswrd">       
+        <p> Passwoldm <span>*</span></p> <br>
+            <input type="password" class="password-input" value="" id="password"><br>
+    </div>  
+    <div class="forgot-pswrd">
+      <div id="checkbox"><input type="checkbox" id="chk" onclick="">Show password</div>
+      <div>  <a href="#" id="forgot-password">Forgot pswrd</a></div></div>
+    <div class="signin-btn">
+        <button id="signin-btn">Sign In</button> 
+    </div>  
+    
+</div>
+<div class="l-line"><hr></div>
+<div class="above-l-line"><p><b>Or Sign-In with</b></p></div>
+<div class="signin-1">
+    <div class="google">
+        <button id="google"><img src="./images/google icon.png" height="23px" width="23px" alt="no source" >   Sign In with Google</button>
+    </div>
+</div>
+</body>
+</html>
